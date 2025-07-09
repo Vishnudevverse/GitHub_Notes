@@ -1,0 +1,35 @@
+git config --global user.name "<yourname>"                  # used in github while creating account
+git config --global user.email "<emailid>"                  # used in github while creating account
+git config --list                                           # Check your config
+
+git init                                                    # Create a new local repo in your folder
+git clone <repo-url>                                        # Clone an existing remote repo
+
+git status                                                  # Check what's changed, staged, unstaged
+
+git add file.txt                                            # Stage a single file
+git add .                                                   # Stage everything in the current folder
+
+git commit -m "Your commit message"                         # message regarding the changes made 
+
+git push                                                    # Push your branch to remote
+git push -u origin main                                     # First time push to set upstream
+
+git pull                                                    # Get changes from remote and merge
+
+git branch                                                  # See all branches
+git checkout -b new-branch                                  # Create & switch to a new branch
+git checkout main                                           # Switch to another branch
+git merge new-branch                                        # Merge new-branch into current branch
+git branch -d new-branch                                    # Delete a branch locally
+
+
+git restore file.txt                                        # Discard changes in file.txt
+git restore --staged file.txt                               # Unstage a file
+git reset --soft HEAD~1                                     # Undo last commit, keep changes staged
+git log                                                     # Show commit history
+
+git remote -v                                               # View remote repo URLs
+git remote add origin <url>                                 # Add a remote repo
+git push -u origin main                                     # Push and set upstream
+git branch -M main                                          # Renames the branch to main (modern default)
