@@ -35,3 +35,4 @@ git push -u origin main                                     # Push and set upstr
 git branch -M main                                          # Renames the branch to main (modern default)
 
 git config --global --add safe.directory "<url>"            #incase of git dubious error
+git config --global --get-all safe.directory                #to remove the url from the safe directory
