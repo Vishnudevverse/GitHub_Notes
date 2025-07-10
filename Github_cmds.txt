@@ -34,5 +34,6 @@ git remote add origin <url>                                 # Add a remote repo
 git push -u origin main                                     # Push and set upstream
 git branch -M main                                          # Renames the branch to main (modern default)
 
-git config --global --add safe.directory "<url>"            #incase of git dubious error
-git config --global --get-all safe.directory                #to remove the url from the safe directory
+git config --global --add safe.directory "<url>"            # incase of git dubious error
+git config --global --unset-all safe.directory "<url>"      # to remove the url from the safe directory
+git config --global --get-all safe.directory                # to show the urls from the safe directory
